@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.App{
+    font-family: 'Iceland', cursive;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#loginBg{
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    width: 100vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginCard{
+    border: 1px solid #fff;
+    border-radius: 2%;
+    background-color: #ffffff75;
+    min-width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link{
+    text-decoration: none;
+    color: #fff
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loginBtns{
+    min-width: 45%;
+    min-height:15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: #00000050;
+    border-radius: 2%;
+    font-size: 120%;
 }
 
-.App-link {
-  color: #61dafb;
+#loginBtn{
+    border: 1px solid red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#registerBtn{
+    border: 1px solid blue;
+
+}
+
+h1{
+    margin:0;
 }
