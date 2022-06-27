@@ -6,6 +6,7 @@
 
 #loginBg{
     background-color: #000;
+    background-image: url('../public/images/Login.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,7 +20,7 @@
 .loginCard{
     border: 1px solid #fff;
     border-radius: 2%;
-    background-color: #ffffff75;
+    background-color: #ffffff20;
     min-width: 30%;
     height: 40%;
     display: flex;
@@ -55,4 +56,104 @@
 
 h1{
     margin:0;
+}
+
+.RegisterBg{
+    background-color: #000000;
+    background-image: url(../public/images/Register.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registerCard{
+    border: 1px solid #fff;
+    border-radius: 2%;
+    background-color: #ffffff20;
+    min-width: 30%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+
+.formBtns{
+    background-color: transparent;
+    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#submitFormBtn{
+    background-color: transparent;
+    border: 1px solid red;
+    min-width: 40%;
+    min-height: 55%;
+    font-size: 150%;
+}
+
+#resetFormBtn{
+    background-color: transparent;
+    border: 1px solid blue;
+    min-width: 40%;
+    min-height: 55%;
+    font-family: 'Iceland', cursive;
+    font-size: 190%;
+    color: #fff
+}
+
+#email{
+    min-width: 98%;
+}
+
+#favTeam{
+    min-width: 99%;
+}
+
+.form-control{
+    font-size: 1.2em;
+}
+
+.predictionsBg{
+    background-color:#000;
+    height: 100vh;
+}
+
+.cardWrapper{
+    min-width: 100%;
+    min-height: 70vh;
+    overflow-y: auto;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.categoryCard{
+    min-width: 35%;
+    border: 1px solid red;
+}
+
+#regularSeasonCard{
+    background-image: url('../public/images/Brady.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -6.5rem;
+}
+
+.cardLink{
+    font-size: 4em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Iceland', cursive;
+    stroke-width: 1px;
+    stroke-color: #fff;
 }

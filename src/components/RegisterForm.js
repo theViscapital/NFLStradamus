@@ -3,15 +3,15 @@ import {Link} from 'react-router-dom';
 
 const RegisterForm = () => {
     return (
-        <div>
+        <div className="registerCard">
             <form className='registerNewUser'>
-                <input required type="text" placeholder='Username'/><br/>
-                <input required type="email" placeholder="Email"/><br/>
-                <input required type='text' placeholder='First Name'/>
-                <input required type='text' placeholder='Last Name'/><br/>
-                <input required type="password" autoComplete="new-password" placeholder='Password'/>
-                <input required type="password" autoComplete="new-password" placeholder='Confirm Password'/><br/>
-                <select required name="favTeam" id="favTeam">
+                <input required className="form-control" id='userName' type="text" placeholder='Username'/><br/>
+                <input required className="form-control" id='email' type="email" placeholder="Email"/><br/>
+                <input required className="form-control" id='firstName' type='text' placeholder='First Name'/>
+                <input required className="form-control" id='lastName' type='text' placeholder='Last Name'/><br/>
+                <input required className="form-control" id='password' type="password" autoComplete="new-password" placeholder='Password'/>
+                <input required className="form-control" id='confirmPassword' type="password" autoComplete="new-password" placeholder='Confirm Password'/><br/>
+                <select required className="form-control" id='favTeam' name="favTeam">
                     <option disabled default value="">Select Your Favorite NFL Team</option>
                     <option value="Cardinals"> Arizona Cardinals </option>
                     <option value="Falcons"> Atlanta Falcons </option>
@@ -46,16 +46,20 @@ const RegisterForm = () => {
                     <option value="Titans"> Tennessee Titans </option>
                     <option value="Commanders"> Washington Commanders </option>
                 </select><br/>
-                
-                <button type="submit">
-                    <Link to='/predictions'>
-                        Register
-                    </Link>
-                </button>
 
-                <button type="reset">
-                    Reset
-                </button>
+                <div className='formBtns'>
+                    <button type="submit" id="submitFormBtn">
+                        <Link to='/predictions' className='link'>
+                            Register
+                        </Link>
+                    </button>
+
+                    <button type="reset" id="resetFormBtn">
+                        Reset
+                    </button>
+                </div>
+                
+
 
                 </form>
         </div>

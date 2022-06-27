@@ -8,44 +8,45 @@ import {Link, Outlet} from 'react-router-dom';
 
 const Predictions = () => {
     return (
-        <div>
+        <div className="predictionsBg">
             <h1>Predictions</h1>
-            <button>
-                <Link to='/regularseason' element= {<RegularSeason/>}>
-                    Regular Season
-                </Link>
-            </button>
+            <div className="cardWrapper">
 
-            <button>
-                <Link to='/postseason' element= {<Postseason/>}>
-                     PostSeason
-                </Link>
-            </button>
+                <button className="categoryCard" id='regularSeasonCard'>
+                    <Link to='/regularseason' className='link, cardLink '  element= {<RegularSeason/>}>
+                        Regular Season
+                    </Link>
+                </button>
 
-            <button>
-                <Link to='/versus' element= {<Versus/>}>
-                     Versus
-                </Link>
-            </button>
+                <button className="categoryCard">
+                    <Link to='/postseason' element= {<Postseason/>}>
+                        PostSeason
+                    </Link>
+                </button>
 
-            <button>
-                <Link to='/overunder' element= {<Overunder/>}>
-                     Over/Under
-                </Link>
-            </button>
+                <button className="categoryCard">
+                    <Link to='/versus' element= {<Versus/>}>
+                        Versus
+                    </Link>
+                </button>
 
-            <button>
-                <Link to='/awards' element= {<Awards/>}>
-                     Awards
-                </Link>
-            </button><br/>
+                <button className="categoryCard">
+                    <Link to='/overunder' element= {<Overunder/>}>
+                        Over/Under
+                    </Link>
+                </button>
 
+                <button className="categoryCard">
+                    <Link to='/awards' element= {<Awards/>}>
+                        Awards
+                    </Link>
+                </button><br/>
+            </div>
             <button type='submit'>
-                <Link to='/home'>
-                Submit
-                </Link>
-            </button>
-
+                    <Link to='/home'>
+                    Submit
+                    </Link>
+                </button>
 
             <Outlet/>
         </div>
