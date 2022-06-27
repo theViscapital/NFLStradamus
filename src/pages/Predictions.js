@@ -4,7 +4,7 @@ import Postseason from './Postseason';
 import Versus from './Versus';
 import Overunder from './Overunder';
 import Awards from './Awards';
-import Hero from '../videos/Hero.mp4';
+import Hero from '../assets/Hero.mp4';
 import {Link, Outlet} from 'react-router-dom';
 
 const Predictions = () => {

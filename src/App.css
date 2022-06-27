@@ -19,44 +19,50 @@
 }
 .loginCard{
     border: 1px solid #fff;
-    border-radius: 2%;
-    background-color: #ffffff20;
-    min-width: 30%;
-    height: 40%;
+    border-radius: 1rem;
+    background-color: #00000060;
+    width:35vw;
+    height: 28vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+#loginLogo{
+    max-width: 28vw;
+    opacity: 85%;
+}
+
 .link{
     font-family: 'Iceland', cursive;
     text-decoration: none;
-    color: #fff
+    stroke-width: 1;
+    color: #fff;
 }
 
 .loginBtns{
-    min-width: 45%;
-    min-height:15%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    min-width: 13vw;
+    height:5vh;
+    margin-top: 2vh;
     background-color: #00000050;
-    border-radius: 2%;
-    font-size: 120%;
+    border-radius: .5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #loginBtn{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 
 #registerBtn{
-    border: 1px solid blue;
+    border: 2px solid blue;
 
 }
 
-h1{
-    margin:0;
-}
 
 .RegisterBg{
     background-color: #000000;
@@ -71,55 +77,99 @@ h1{
 }
 
 .registerCard{
-    border: 1px solid #fff;
-    border-radius: 2%;
-    background-color: #ffffff20;
-    min-width: 30%;
-    height: 40%;
+    border: .25px solid #fff;
+    border-radius: 1rem;
+    background-color: #00000060;
+    min-width: 35vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position: fixed;
+    padding-bottom: 1.5rem;
 }
+
+.registerNewUser{
+    display: flex;
+    display:block;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#formHeader{
+    font-size: 3rem;
+    color: #fff;
+    display: flex;
+    display:inline;
+    letter-spacing: 10px;
+    text-decoration: overline;
+    margin-top: .5rem;
+}
+
+#registerLogo{
+    max-width: 30vw;
+    opacity: 85%;
+    margin-top: 4vh;
+}
+
 
 .formBtns{
     background-color: transparent;
-    border-radius: 2%;
+    border-radius: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 1.5rem;
 
 }
 
 #submitFormBtn{
     background-color: transparent;
-    border: 1px solid red;
-    min-width: 40%;
-    min-height: 55%;
-    font-size: 150%;
+    border: 2px solid red;
+    border-radius: .5rem;
+    min-width: 18vw;
+    min-height: 5vh;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 #resetFormBtn{
     background-color: transparent;
-    border: 1px solid blue;
-    min-width: 40%;
-    min-height: 55%;
+    border: 2px solid blue;
+    border-radius: .5rem;
+    min-width: 18vw;
+    min-height: 5vh;
     font-family: 'Iceland', cursive;
-    font-size: 190%;
-    color: #fff
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#email{
-    min-width: 98%;
-}
 
 #favTeam{
-    min-width: 99%;
+    width: 100%;
+    border-radius: .5rem;
 }
 
+.team{
+    font-size: 1.8rem;
+}
+
+
+
 .form-control{
-    font-size: 1.2em;
+    font-size: 1.8rem;
+    font-family: 'Iceland', cursive;
 }
 
 #predictionsBg{
