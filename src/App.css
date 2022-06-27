@@ -122,38 +122,198 @@ h1{
     font-size: 1.2em;
 }
 
-.predictionsBg{
-    background-color:#000;
+#predictionsBg{
+    background-color: #000;
+}
+
+#heroVideo{
+    width: 100vw;
+    height:100vh;
+    object-fit: cover;
+}
+
+#predictionsHero{
+    background-color: rgba(0, 0, 0, 0.5);
     height: 100vh;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+#HeroBox{
+    border: .5px solid #fff;
+    border-radius: 1rem;
+    background-color: #000;
+    height: 50vh;
+    width: 50vw;
+    opacity: 75%;
+    display:flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    overflow-y: auto;
+    position:absolute;
+    animation: fade-in 7.5s ease-in;
+    }
+
+@keyframes fade-in{
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 75%;
+    }
+}
+
+#heroTitle{
+    color: #ffffff;
+    stroke-width: 1.5;
+    stroke-color: crimson;
+    font-size: 4.25rem;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 5%;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    opacity: 75%;
+    animation: fade-in 7.5s ease-in;
+}
+
+#heroText{
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    max-height: 35vh;
+    overflow-y: auto;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    opacity: 75%;
+    animation: fade-in 9.5s ease-in;
+
+}
+
+#scrollReminder{
+    color: #fff;
+    text-align: end;
+    padding-right: 2vw;
+    opacity: 75%;
+    animation: fade-in 11.5s ease-in;
+
 }
 
 .cardWrapper{
     min-width: 100%;
-    min-height: 70vh;
-    overflow-y: auto;
-    border: 1px solid red;
+    min-height: 85vh;
+    overflow-y: scroll;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    margin-top: 15vh;
+    margin-bottom:2vh;
+}
+
+#predictionsSubmitBtn{
+    background-color: greenyellow;
+    opacity: 20%;
+    min-width: 25vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+#predictionsSubmitLink{
+    color: black;
+    font-size:2.5rem;
+}
+
+#predictionTallyText{
+    color: white;
+}
+
+.predictionTally{
+    font-size: 4rem;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin-left: 2rem;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 5vh;
+    display: flex;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+#completedTally{
+    color: red;
+}
+#totalTally{
+    color: white;
 }
 
 .categoryCard{
     min-width: 35%;
-    border: 1px solid red;
+    border: 1px solid #ffffff;
+    border-radius: 1rem;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #regularSeasonCard{
-    background-image: url('../public/images/Brady.jpg');
+    background-image: url('../public/images/RegularSeason.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: -6.5rem;
+    background-position-x: -12.5rem;
+}
+
+#postseasonCard{
+    background-image: url('../public/images/Postseason.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -32.5rem;
+}
+
+#versusCard{
+    background-image: url('../public/images/versus.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -20rem;
+}
+
+#overunderCard{
+    background-image: url('../public/images/Over:Under.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#awardsCard{
+    background-image: url('../public/images/Awards.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-position-y: -2.5rem;
 }
 
 .cardLink{
-    font-size: 4em;
+    font-size: 7em;
     text-decoration: none;
     color: black;
     font-family: 'Iceland', cursive;
     stroke-width: 1px;
     stroke-color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
+
+.Footer{
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+
+
